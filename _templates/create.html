@@ -1,32 +1,72 @@
-<html>
-    <form action="addData" method="POST">
-        <table>
-            <tr>
-                <td>
-                    <label for="project_name">Project Name</label>
-                    <input type ="text" name="project_name" id="project_name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="student_name">Student Name</label>
-                    <input type = "text" name="student_name" id="student_name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="project_description"> Project Description</label>
-                    <textarea name="project_description" id="project_decsription" cols="30" rows="10"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="submit" class="optionButton">submit</button>
-                </td>
-            </tr>
-        </table>
-        
-        
-        
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Create Entry</title>
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <h2 class="mb-4">Create Entry</h2>
+      <div class="form-group">
+        <form action="addData" method="POST">
+          <tr>
+            <td>
+              <label for="project_name">Project Name</label>
+              <input
+                type="text"
+                placeholder="Enter a project name"
+                name="project_name"
+                id="project_name"
+                class="form-control mb-4"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="student_name">Student Name</label>
+              <input
+                class="form-control mb-4"
+                placeholder="Enter a name"
+                type="text"
+                name="student_name"
+                id="student_name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="project_description"> Project Description</label>
+              <textarea
+                name="project_description"
+                id="project_decsription"
+                class="form-control mb-2"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" class="optionButton btn btn-primary">
+                submit
+              </button>
+            </td>
+          </tr>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
