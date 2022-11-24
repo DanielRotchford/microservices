@@ -28,6 +28,13 @@ DEBUG = True
 ALLOWED_HOSTS = ['cs3301p3.azurewebsites.net']
 
 
+STATIC_URL = '/_static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'/_static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, '_static')
+]
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # Application definition
 
 INSTALLED_APPS = [
